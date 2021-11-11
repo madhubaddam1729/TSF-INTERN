@@ -1,0 +1,80 @@
+<%- include('partials/header') %>
+
+    <h2>Select the customer to send money</h2>
+    <br>
+    <br>
+
+    <div class="container-fluid">
+
+        <div class="row">
+                
+            <div class="col-lg-8 col-md-8">
+    
+    <table id="table" class="center" style="width: 80%;">
+    <tr>
+        <th colspan="2">
+            Name
+        </th>
+        <th colspan="2">
+            Email
+        </th>
+        <th colspan="2">
+            Balance
+        </th>
+    </tr>
+<% for(var i=0;i<10;i++){ %>
+      
+    
+    <tr>
+        
+           
+        <td colspan="2">
+            <%= users[i].Name %>
+        </td>
+        <td colspan="2">
+            <%= users[i].Email %>
+        </td>
+        <td colspan="2">
+            <%= users[i].Balance %>
+        </td>
+        
+    
+    </tr>
+      
+       
+<% } %>
+</table>
+</div>
+
+                
+    <div class="col-lg-4 col-md-4">
+    
+
+<form action="/selectedCustomer" method="post">
+    <h2>Selected Customer</h2>
+ Name:<input type="text" name="button" id="button" required ><br><br>
+ Mail:<input type="email" name="maill" id="maill" required ><br><br>
+<button type="submit" class="btn btn-dark">submit</button>
+</form>
+</div>
+
+
+<script>
+    
+    var table = document.getElementById('table');
+    
+    for(var i = 0; i < table.rows.length; i++)
+    {
+        table.rows[i].onclick = function()
+        {
+             //rIndex = this.rowIndex;
+             document.getElementById("button").value = this.cells[0].innerHTML;
+             document.getElementById("maill").value = this.cells[1].innerHTML;
+             
+        };
+    }
+
+</script>
+
+
+<%- include('partials/footer') %>

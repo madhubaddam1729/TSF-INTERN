@@ -1,0 +1,79 @@
+body{
+    padding-top: 0%;
+    text-align: center;
+    background-color: #8e8eb4;
+    line-height: 1;
+}
+h1{
+    font-family:'cursive';
+    font-size: 563%;
+    
+    color: #050707;
+}
+table{
+    text-align: center;
+}
+
+table tr:not(:first-child){
+    cursor: pointer;
+}
+table tr:not(:first-child):hover{background-color: rgba(196, 213, 221, 0.527);}
+
+td{
+    padding: 2%;
+}
+
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.result{
+    padding-top: 10%;
+}
+
+.logo
+{
+    padding-top: 2%;
+}
+.cont
+{
+    height: 300px;
+}
+
+.BankImage
+{
+    height: 800px;
+    width: 500px;
+    padding-left: 0px;
+    opacity: 0.6;
+}
+
+.navbar
+{
+    height: 50px;
+}
+
+.head
+{
+    background-color:#343a40;;
+    padding-bottom: 4%;
+   
+}
+.head1
+{
+    padding-top: 2%;
+    color: white;
+}
+footer
+{
+    background-color:#343a40;;
+    padding: 4% 0%;
+   
+}
+
+.foot
+{
+    color: white;
+}

@@ -1,0 +1,49 @@
+<%- include('partials/header') %>
+
+    <h2>Transactions</h2>
+    <br>
+    <br>
+    
+<table id="table" style="width:80%" class="center">
+    <tr>
+        <th colspan="2">
+            From
+        </th>
+        <th colspan="2">
+            To
+        </th>
+        <th colspan="2">
+            Amount
+        </th>
+        <th colspan="2">
+            Time
+        </th>
+    </tr>
+<% for(var i=0;i<trans.length;i++){ %>
+      
+    
+    <tr>
+        
+           
+        <td colspan="2">
+            <%= trans[i].From %>
+        </td>
+        <td colspan="2">
+            <%= trans[i].To %>
+        </td>
+        <td colspan="2">
+            <%= trans[i].Amount %>
+        </td>
+        <td colspan="2">
+            <%= trans[i].Time %>
+        </td>
+    
+    </tr>
+      
+       
+<% } %>
+</table>
+
+
+
+<%- include('partials/footer') %>

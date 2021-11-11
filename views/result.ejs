@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+<br><br><br>
+    <h2>You are transferring money from <%= x1 %> to <%= y1 %> </h2>
+    <form action="/transaction" method="post">
+        <div class="result">
+    <label for="amount">Enter the amount to send</label>
+            <input type="text" name="amount" required id="amount">
+    <button type="submit" class="btn btn-dark">Transfer Now</button>
+</div>
+        </form>
+
+        <%- include('partials/footer') %>

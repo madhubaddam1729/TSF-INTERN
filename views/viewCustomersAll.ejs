@@ -1,0 +1,44 @@
+<%- include('partials/header') %>
+
+    <h2>View Customers</h2>
+    <br>
+    <br>
+    
+<table class="center" style="width:60%">
+    <tr>
+        <th colspan="2">
+            Name
+        </th>
+        <th colspan="2">
+            Email
+        </th>
+        <th colspan="2">
+            Balance
+        </th>
+    </tr>
+<% for(var i=0;i<10;i++){ %>
+      
+    
+    <tr>
+        
+           
+        <td colspan="2">
+            <%= users[i].Name %>
+        </td>
+        <td colspan="2">
+            <%= users[i].Email %>
+        </td>
+        <td colspan="2">
+            <%= users[i].Balance %>
+        </td>
+        
+    
+    </tr>
+      
+       
+<% } %>
+</table>
+
+
+
+<%- include('partials/footer') %>
